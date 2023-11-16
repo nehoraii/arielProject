@@ -1,12 +1,13 @@
-package entity;
+package com.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Objects;
-import java.util.Optional;
 
 @Entity
-@Table(name = "users", schema = "public", catalog = "login")
+@Data
+@Table(name = "tryAriel", schema = "public")
 public class UsersEntity {//implements UserRepository {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -22,24 +23,9 @@ public class UsersEntity {//implements UserRepository {
     }
 
     @Basic
-    @Column(name = "user_name")
+    @Column(name = "name")
     private String userName;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
     @Override
     public boolean equals(Object o) {

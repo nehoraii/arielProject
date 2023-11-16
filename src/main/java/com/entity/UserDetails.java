@@ -1,4 +1,4 @@
-package entity;
+package com.entity;
 
 // Simple UserDetails class for storing username and password
 public class UserDetails {

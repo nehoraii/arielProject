@@ -1,5 +1,6 @@
-package entity;
+package com.repository;
 
+import com.entity.PasswordsEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

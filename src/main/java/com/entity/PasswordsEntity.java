@@ -1,9 +1,8 @@
-package entity;
+package com.entity;
 
 import jakarta.persistence.*;
 
 import java.util.Objects;
-import java.util.Optional;
 
 @Entity
 @Table(name = "passwords", schema = "public", catalog = "login")
